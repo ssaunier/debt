@@ -8,3 +8,5 @@ bin_file = Pathname.new(__FILE__).realpath
 # add self to libpath
 $:.unshift File.expand_path("../../lib", bin_file)
 
+require "debt/cli"
+Debt::CLI.start(*ARGV)
