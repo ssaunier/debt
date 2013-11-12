@@ -8,9 +8,13 @@ Gem::Specification.new do |spec|
   spec.version       = Debt::VERSION
   spec.authors       = ["Sebastien Saunier"]
   spec.email         = ["seb@saunier.me"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Quickly assess the complexity and technical debt of a rails app}
+  spec.description   = %q{
+debt is a utility to be run in your rails app root directory to quickly dive into it.
+It comes handy when you get your hands on a legacy rails application and you want to
+understand how much technical debt you inherit.
+  }
+  spec.homepage      = "https://github.com/ssaunier/debt"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -18,6 +22,6 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.5"
+  spec.add_development_dependency "bundler", "~> 1.5.0.rc1"
   spec.add_development_dependency "rake"
 end
