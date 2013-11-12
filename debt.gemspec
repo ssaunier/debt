@@ -22,6 +22,8 @@ understand how much technical debt you inherit.
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "code_metrics", "~> 0.1.2"
+
   spec.add_development_dependency "bundler", "~> 1.5.0.rc1"
   spec.add_development_dependency "rake"
 end
